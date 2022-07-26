@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_service_banners",
+  "info": {
+    "displayName": "Banner",
+    "icon": "window-maximize",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "offer": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "default": "#"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "backimage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slider": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

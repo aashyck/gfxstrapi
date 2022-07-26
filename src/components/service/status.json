@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_service_statuses",
+  "info": {
+    "displayName": "Status",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "integer",
+      "default": 100,
+      "required": true
+    },
+    "content": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "color": {
+      "type": "string",
+      "default": "#3b82f6"
+    }
+  }
+}
