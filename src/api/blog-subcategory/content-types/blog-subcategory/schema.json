@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "blog_categories",
+  "collectionName": "blog_subcategories",
   "info": {
-    "singularName": "blog-category",
-    "pluralName": "blog-categories",
-    "displayName": "Blog Category",
+    "singularName": "blog-subcategory",
+    "pluralName": "blog-subcategories",
+    "displayName": "Blog Subcategory",
     "description": ""
   },
   "options": {
@@ -23,8 +23,7 @@
         }
       },
       "type": "string",
-      "required": true,
-      "maxLength": 50
+      "required": true
     },
     "slug": {
       "pluginOptions": {
@@ -33,27 +32,19 @@
         }
       },
       "type": "uid",
-      "required": true,
-      "targetField": "title"
+      "targetField": "title",
+      "required": true
     },
-    "blog": {
+    "blog_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-category.blog-category"
+    },
+    "blogs": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::blog.blog",
-      "inversedBy": "blogcategory"
-    },
-    "icon": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "mappedBy": "blog_subcategories"
     }
   }
 }

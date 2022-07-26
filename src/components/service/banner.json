@@ -41,10 +41,12 @@
         "images"
       ]
     },
-    "slider": {
-      "type": "boolean",
-      "default": false,
-      "required": true
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "img",
+        "slider"
+      ]
     }
   }
 }
