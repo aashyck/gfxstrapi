@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_service_contets",
+  "info": {
+    "displayName": "Contets",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "button_url": {
+      "type": "string"
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    },
+    "slider": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

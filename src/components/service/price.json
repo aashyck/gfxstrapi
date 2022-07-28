@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_service_prices",
+  "info": {
+    "displayName": "Price",
+    "icon": "dollar-sign",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "button_url": {
+      "type": "string"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "service.price-list"
+    }
+  }
+}

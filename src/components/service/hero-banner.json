@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_service_hero_banners",
+  "info": {
+    "displayName": "Hero Banner",
+    "icon": "road",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "offer": {
+      "type": "boolean",
+      "default": false
+    },
+    "offer_text": {
+      "type": "string"
+    },
+    "button_text": {
+      "type": "string"
+    },
+    "button_url": {
+      "type": "string"
+    },
+    "button2_text": {
+      "type": "string"
+    },
+    "button2_url": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "slider": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

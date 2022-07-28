@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_service_portfolios",
+  "info": {
+    "displayName": "Portfolio"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

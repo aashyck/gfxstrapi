@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_service_price_lists",
+  "info": {
+    "displayName": "Price List"
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string"
+    }
+  }
+}

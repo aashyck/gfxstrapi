@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_service_reviews",
+  "info": {
+    "displayName": "Reviews",
+    "icon": "star-half-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "review": {
+      "displayName": "Review",
+      "type": "component",
+      "repeatable": true,
+      "component": "service.review"
+    }
+  }
+}
